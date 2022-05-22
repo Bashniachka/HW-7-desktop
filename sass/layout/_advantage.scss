@@ -4,11 +4,10 @@
 
 .advantage-icon-bg {
     width: 270px;
-    display: flex;
+    @extend %align-list;
     height: 120px;
     margin-bottom: 30px;
     justify-content: center;
-    align-items: center;
     background-color: var(--light-background-color);
 }
 

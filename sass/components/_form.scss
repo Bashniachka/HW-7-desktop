@@ -31,6 +31,9 @@
         padding-left: 42px;
         outline: none;
         transition: border-color var(--main-transition-duration) var(--main-transition-timing);
+        &:focus {
+            border-color: var(--accent-color);
+        }
     }
 
     .form-icon {
@@ -40,14 +43,9 @@
         transform: translateY(-50%);
         fill: var(--primary-title-color);
         transition: fill var(--main-transition-duration) var(--main-transition-timing);
-    }
-
-    .form-input:focus + .form-icon{
-        fill: var(--accent-color);
-    }
-
-    .form-input:focus {
-        border-color: var(--accent-color);
+        .form-input:focus + &{
+            fill: var(--accent-color);
+        }
     }
 
     .comments-box {
@@ -66,10 +64,9 @@
         margin-bottom: 20px;
         resize: none;
         transition: border-color var(--main-transition-duration) var(--main-transition-timing);
-    }
-
-    .form-textarea:focus {
-        border-color: var(--accent-color);
+        &:focus {
+            border-color: var(--accent-color);
+        }
     }
 
     ::placeholder{
@@ -83,9 +80,8 @@
         margin-bottom: 30px;
     }
     .form-policy{
-        display: flex;
+        @extend %align-list;
         justify-content: center;
-        align-items: center;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -102,8 +98,7 @@
         border: 2px solid var(--top-logo-color);
         border-radius: 3px;
         margin-right: 7px;
-        display: flex;
-        align-items: center;
+        @extend %align-list;
         justify-content: center;
         transition: background-color var(--main-transition-duration) var(--main-transition-timing),
         border var(--main-transition-duration) var(--main-transition-timing);
@@ -120,9 +115,8 @@
 
 
     .form-btn{
-        display: flex;
+        @extend %align-list;
         justify-content: center;
-        align-items: center;
         width: 200px;
         height: 50px;
         margin: auto;

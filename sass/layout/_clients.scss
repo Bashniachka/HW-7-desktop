@@ -7,36 +7,37 @@
     margin-bottom: 50px;
 }
 
+
 .clients-box {
     width: 170px;
     height: 92px;
     border: 1px solid var(--color-icon);
     border-radius: 4px;
-    display: flex;
+    @extend %align-list;
     justify-content: center;
-    align-items: center;
     color: var(--color-icon);
     transition: color var(--main-transition-duration) var(--main-transition-timing),
     border-color var(--main-transition-duration) var(--main-transition-timing);
 }
-.clients-item :hover,
-.clients-item :focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
+
 
 .clients-item{
     cursor: pointer;
-    
+    & :hover,
+    &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+&+&{
+    margin-left: 30px;
+}
 }
 
 .clients-icon {
     fill: currentColor;
 }
 
-.clients-item+.clients-item{
-    margin-left: 30px;
-}
+
 
 .clients-list{
     display: flex;
