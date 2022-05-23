@@ -1,9 +1,9 @@
-.clients-title{
+.clients{
  @extend %title-list;
 }
 
 
-.clients-box {
+.clients__box {
     width: 170px;
     height: 92px;
     border: 1px solid var(--color-icon);
@@ -16,7 +16,7 @@
 }
 
 
-.clients-item{
+.clients__item{
     cursor: pointer;
     & :hover,
     &:focus {
@@ -28,13 +28,13 @@
 }
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 
 
 
-.clients-list{
+.clients__list{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;

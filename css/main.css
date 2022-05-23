@@ -28,12 +28,12 @@
   margin: -1px;
 }
 
-.subscription-btn, .footer-soc-link, .filter-list, .clients-box, .team-soc-link, .about-item-text, .advantage-icon-bg, .contact-link, .header-nav, .form-btn, .form-policy span, .form-policy, .buttot-close {
+.subscription-btn, .footer-soc-link, .filter-list, .clients__box, .team-soc-link, .about__text, .advantage-icon-bg, .contact-link, .header-nav, .form-btn, .form-policy span, .form-policy, .buttot-close {
   display: flex;
   align-items: center;
 }
 
-.clients-title, .team-title, .about-title {
+.clients, .team-title, .about {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -438,24 +438,24 @@ body {
   line-height: 1.71;
 }
 
-.about {
+.about-section {
   background-color: var(--header-color);
   padding-top: 0;
 }
 
-.about-item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-list {
+.about__list {
   display: flex;
 }
 
-.about-box {
+.about__box {
   position: relative;
 }
 
-.about-item-text {
+.about__text {
   position: absolute;
   font-size: 14px;
   line-height: 1.4;
@@ -534,7 +534,7 @@ body {
   fill: currentColor;
 }
 
-.clients-box {
+.clients__box {
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-icon);
@@ -544,22 +544,22 @@ body {
   transition: color var(--main-transition-duration) var(--main-transition-timing), border-color var(--main-transition-duration) var(--main-transition-timing);
 }
 
-.clients-item {
+.clients__item {
   cursor: pointer;
 }
-.clients-item :hover, .clients-item:focus {
+.clients__item :hover, .clients__item:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.clients-item + .clients-item {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;

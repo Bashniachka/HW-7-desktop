@@ -1,25 +1,25 @@
-.about {
+.about-section {
     background-color: var(--header-color);
     padding-top: 0;
 } 
-.about-item:not(:last-child) {
+.about__item:not(:last-child) {
     margin-right: 30px;
 }
-.about-list {
+.about__list {
     display: flex;
 }
 
-.about-title {
+.about {
     @extend %title-list;
 }
 
-.about-box {
+.about__box {
     position: relative;
     
 }
 
 
-.about-item-text {
+.about__text {
     position: absolute;
     font-size: 14px;
     line-height: 1.4;
