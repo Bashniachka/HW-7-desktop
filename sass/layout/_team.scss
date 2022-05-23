@@ -16,11 +16,7 @@
 }
 
 .team-title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    color: var(--primary-title-color);
-    margin-bottom: 50px;
+    @extend %title-list;
 }
 
 .team-img {
